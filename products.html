@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Products & Machines | Precision Manufacturing Co.</title>
+    <title>Products | Precision Manufacturing Co.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <!-- Header -->
+
     <header class="header">
         <div class="container navbar">
-            <a class="navbar__brand" href="index.html">
+            <a href="index.html" class="navbar__brand">
                 <div class="navbar__logo">PM</div>
                 <div class="navbar__title">Precision Manufacturing Co.</div>
             </a>
@@ -26,54 +26,50 @@
                 <a href="contact.html" class="navbar__link">Contact</a>
             </nav>
 
-            <div class="navbar__actions">
-                <a href="contact.html#quote" class="btn btn--outline">Contact Sales</a>
-                <a href="contact.html#quote" class="btn btn--primary">Request Quote</a>
-            </div>
-
             <button class="navbar__toggle">☰</button>
         </div>
     </header>
 
     <main>
 
-        <!-- FULLSCREEN PRODUCTS SECTION -->
+        <!-- FULLSCREEN PRODUCTS -->
         <section class="section section-fullscreen">
             <div class="section-centered">
-                <div class="section-header-centered">
+                <div class="section-header-centered reveal">
                     <div class="section-eyebrow">Products & Components</div>
                     <h1 class="section-title">What we typically manufacture</h1>
                     <p class="section-subtitle">
-                        Machined parts and assemblies used in industrial machinery,
-                        conveyors, construction equipment, and automation systems.
+                        Machined parts and assemblies used in industrial machinery, conveyors, construction equipment,
+                        and automation systems.
                     </p>
                 </div>
 
-                <div class="section-content">
-                    <div class="simple-grid-3 reveal">
+                <div class="section-content reveal">
+                    <div class="simple-grid-3">
                         <div>
                             <h3>Machined Parts</h3>
-                            <p>Shafts, flanges, hubs, couplings, precision brackets.</p>
+                            <p>Shafts, flanges, hubs, brackets, coupling components.</p>
                         </div>
 
                         <div>
                             <h3>Fabricated Items</h3>
-                            <p>Frames, bases, welded assemblies, structural components.</p>
+                            <p>Frames, bases, welded assemblies, structural parts.</p>
                         </div>
 
                         <div>
                             <h3>Industrial Use</h3>
-                            <p>Material handling, construction, power, automation.</p>
+                            <p>Material handling, energy, construction, automation.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- FULLSCREEN MACHINE LIST -->
+        <!-- MACHINE LIST -->
         <section class="section section-fullscreen section--alt">
             <div class="section-centered">
-                <div class="section-header-centered">
+                <div class="section-header-centered reveal">
                     <div class="section-eyebrow">Machine List</div>
                     <h2 class="section-title">Key machines & capacities</h2>
                 </div>
@@ -116,37 +112,29 @@
                         </tbody>
                     </table>
                 </div>
+
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-
-                <div class="footer__brand">
-                    <div class="footer__logo-text">Precision Manufacturing Co.</div>
-                </div>
-
-                <div>
-                    <div class="footer__links-title">Quick Links</div>
-                    <a href="services.html" class="footer__link">Services</a>
-                    <a href="products.html" class="footer__link">Products</a>
-                    <a href="gallery.html" class="footer__link">Gallery</a>
-                    <a href="contact.html" class="footer__link">Contact</a>
-                </div>
-
-                <div>
-                    <div class="footer__links-title">Contact</div>
-                    <p>Industrial Area, Your City</p>
-                </div>
-
+        <div class="container footer__grid">
+            <div>
+                <div class="footer__logo-text">Precision Manufacturing Co.</div>
             </div>
-
-            <div class="footer__bottom">© 2025 Precision Manufacturing Co.</div>
+            <div>
+                <div class="footer__links-title">Quick Links</div>
+                <a href="services.html" class="footer__link">Services</a>
+                <a href="products.html" class="footer__link">Products</a>
+                <a href="gallery.html" class="footer__link">Gallery</a>
+            </div>
+            <div>
+                <div class="footer__links-title">Contact</div>
+                <p>rfq@precisionmfg.co</p>
+            </div>
         </div>
+        <div class="footer__bottom">© 2025 Precision Manufacturing Co.</div>
     </footer>
 
     <script src="script.js"></script>
