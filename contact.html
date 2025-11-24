@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact | Precision Manufacturing Co.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="navbar__brand">
+                <div class="navbar__logo">PM</div>
+                <div class="navbar__title">Precision Manufacturing Co.</div>
+            </a>
+
+            <nav class="navbar__menu">
+                <a href="index.html" class="navbar__link">Home</a>
+                <a href="about.html" class="navbar__link">About</a>
+                <a href="services.html" class="navbar__link">Services</a>
+                <a href="products.html" class="navbar__link">Products</a>
+                <a href="gallery.html" class="navbar__link">Gallery</a>
+                <a href="contact.html" class="navbar__link navbar__link--active">Contact</a>
+            </nav>
+
+            <button class="navbar__toggle">☰</button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- FULLSCREEN CONTACT SECTION -->
+        <section class="section section-fullscreen">
+            <div class="section-centered">
+                <div class="section-header-centered">
+                    <div class="section-eyebrow">Contact</div>
+                    <h1 class="section-title">Let’s talk about your requirements</h1>
+                    <p class="section-subtitle">
+                        RFQs, vendor development, capacity enquiries — we respond within 1 working day.
+                    </p>
+                </div>
+
+                <div class="section-content reveal">
+                    <ul class="contact-list">
+                        <li><strong>Phone:</strong> +91-98765 43210</li>
+                        <li><strong>Email:</strong> rfq@precisionmfg.co</li>
+                        <li><strong>Alt Email:</strong> sales@precisionmfg.co</li>
+                        <li><strong>Address:</strong> Industrial Area, Your City</li>
+                    </ul>
+
+                    <div class="map-embed">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6534.289354379359!2d77.66370051597411!3d12.831540824947197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1763962658190!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FULLSCREEN QUOTE FORM -->
+        <section id="quote" class="section section-fullscreen section--alt">
+            <div class="section-centered">
+                <div class="section-header-centered">
+                    <div class="section-eyebrow">Request Quote</div>
+                    <h2 class="section-title">Share your drawings or requirements</h2>
+                    <p class="section-subtitle">We will respond with costing & feasibility.</p>
+                </div>
+
+                <div class="section-content reveal">
+                    <div class="quote-layout">
+                        <div class="quote-panel">
+                            <!-- FORM -->
+                            <form>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" class="form-input" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Company</label>
+                                        <input type="text" class="form-input" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-input" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Phone</label>
+                                        <input type="tel" class="form-input" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group" style="margin-top: 1rem;">
+                                    <label class="form-label">Requirement</label>
+                                    <select class="form-select">
+                                        <option>CNC Components</option>
+                                        <option>Fabrication</option>
+                                        <option>Assembly</option>
+                                        <option>Prototype</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group" style="margin-top: .75rem;">
+                                    <label class="form-label">Project Details</label>
+                                    <textarea class="form-textarea"></textarea>
+                                </div>
+
+                                <button class="btn btn--primary" style="margin-top: 1rem;">Submit</button>
+                            </form>
+                        </div>
+
+                        <div>
+                            <h3>What to include</h3>
+                            <ul class="contact-list">
+                                <li>Drawing numbers</li>
+                                <li>Quantity & volume</li>
+                                <li>Material specs</li>
+                                <li>Timeline</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <div class="footer__logo-text">Precision Manufacturing Co.</div>
+            </div>
+            <div>
+                <div class="footer__links-title">Links</div>
+                <a href="services.html" class="footer__link">Services</a>
+                <a href="products.html" class="footer__link">Products</a>
+                <a href="gallery.html" class="footer__link">Gallery</a>
+            </div>
+            <div>
+                <div class="footer__links-title">Contact</div>
+                <p>rfq@precisionmfg.co</p>
+            </div>
+        </div>
+
+        <div class="footer__bottom">© 2025 Precision Manufacturing Co.</div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
