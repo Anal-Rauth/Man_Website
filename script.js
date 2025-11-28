@@ -1,11 +1,15 @@
+// ======================
+// NAVBAR BEHAVIOUR
+// ======================
+
 // Navbar elevation on scroll
 window.addEventListener("scroll", () => {
-    const header = document.querySelector(".header");
-    if (!header) return;
+    const headerEl = document.querySelector(".header");
+    if (!headerEl) return;
     if (window.scrollY > 16) {
-        header.classList.add("header--elevated");
+        headerEl.classList.add("header--elevated");
     } else {
-        header.classList.remove("header--elevated");
+        headerEl.classList.remove("header--elevated");
     }
 });
 
@@ -29,7 +33,10 @@ document.addEventListener("click", (e) => {
     }
 });
 
-// Ripple effect on .btn
+// ======================
+// BUTTON RIPPLE EFFECT
+// ======================
+
 document.addEventListener("click", function (e) {
     const target = e.target.closest(".btn");
     if (!target) return;
@@ -50,7 +57,10 @@ document.addEventListener("click", function (e) {
     }, 600);
 });
 
-// Scroll reveal
+// ======================
+// SCROLL REVEAL
+// ======================
+
 const revealElements = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
@@ -68,3 +78,51 @@ const observer = new IntersectionObserver(
 );
 
 revealElements.forEach((el) => observer.observe(el));
+
+// ======================
+// HERO IMAGE SLIDER
+// ======================
+
+const heroImg = document.getElementById("heroBannerImage");
+const heroPrev = document.querySelector(".hero-banner__arrow--left");
+const heroNext = document.querySelector(".hero-banner__arrow--right");
+
+// IMPORTANT: make sure these filenames exactly match your /images folder
+const heroImages = [
+    "images/Industrial project1.jpg",
+    "images/Industrial project2.jpg",
+    "images/Industrial project3.jpg",
+    "images/Industrial project4.jpg"
+];
+
+let heroIndex = 0;
+
+function setHeroImage(index) {
+    if (!heroImg) return;
+    heroImg.src = heroImages[index];
+}
+
+// Manual controls (arrows)
+if (heroPrev) {
+    heroPrev.addEventListener("click", () => {
+        heroIndex = (heroIndex - 1 + heroImages.length) % heroImages.length;
+        setHeroImage(heroIndex);
+    });
+}
+
+if (heroNext) {
+    heroNext.addEventListener("click", () => {
+        heroIndex = (heroIndex + 1) % heroImages.length;
+        setHeroImage(heroIndex);
+    });
+}
+
+// Auto-slide every 4 seconds
+if (heroImg) {
+    setHeroImage(heroIndex); // ensure first image is set from the array
+
+    setInterval(() => {
+        heroIndex = (heroIndex + 1) % heroImages.length;
+        setHeroImage(heroIndex);
+    }, 4000);
+}

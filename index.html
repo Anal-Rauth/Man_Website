@@ -6,7 +6,6 @@
     <title>Precision Manufacturing Co. | CNC & Fabrication</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -19,7 +18,7 @@
             </a>
 
             <nav class="navbar__menu">
-                <a href="index.html" class="navbar__link">Home</a>
+                <a href="index.html" class="navbar__link navbar__link--active">Home</a>
                 <a href="about.html" class="navbar__link">About Us</a>
                 <a href="services.html" class="navbar__link">Services</a>
                 <a href="products.html" class="navbar__link">Products</a>
@@ -38,164 +37,231 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero__grid">
-            <div class="hero__content reveal">
-                <div class="hero__eyebrow">
-                    <span class="hero__eyebrow-badge"></span>
-                    ISO-certified CNC machining & fabrication
-                </div>
-                <h1 class="hero__title">
-                    Heavy-Duty <span>Manufacturing</span> for Real-World Performance.
+    <!-- HERO – full width banner like reference -->
+    <section class="hero hero--banner">
+        <div class="hero-banner__overlay"></div>
+
+        <div class="hero-banner__inner container">
+            <div class="hero-banner__content reveal">
+                <p class="hero-banner__eyebrow">Real Performance Starts Here</p>
+                <h1 class="hero-banner__title">
+                    Precision CNC &amp; Fabrication<br />
+                    <span>For Heavy-Duty Applications</span>
                 </h1>
-                <p class="hero__subtitle">
-                    From precision CNC components to custom welding assemblies, we help OEMs and
-                    industrial leaders build reliable machines that perform in the harshest
-                    environments.
+                <p class="hero-banner__subtitle">
+                    We manufacture critical components, weldments, and assemblies for OEMs and
+                    industrial plants that can’t afford downtime.
                 </p>
-                <div class="hero__buttons">
-                    <a href="contact.html#quote" class="btn btn--primary">Get a Project Quote</a>
-                    <a href="services.html" class="btn btn--outline">View Services</a>
+
+                <div class="hero-banner__buttons">
+                    <a href="contact.html#quote" class="btn btn--primary">Request a Project Quote</a>
+                    <a href="services.html" class="btn btn--outline">View Capabilities</a>
                 </div>
-                <div class="hero__stats">
-                    <div class="hero__stat">20+ Years in Heavy Engineering</div>
-                    <div class="hero__stat">ISO 9001:2015 | CNC & Fabrication</div>
-                    <div class="hero__stat">On-time delivery: 98.4%</div>
+
+                <div class="hero-banner__stats">
+                    <div class="hero-banner__stat">
+                        <strong>20+</strong>
+                        <span>Years in heavy engineering</span>
+                    </div>
+                    <div class="hero-banner__stat">
+                        <strong>98.4%</strong>
+                        <span>On-time delivery performance</span>
+                    </div>
+                    <div class="hero-banner__stat">
+                        <strong>ISO 9001:2015</strong>
+                        <span>Process-driven quality systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background image block (slider target) -->
+        <div class="hero-banner__image-side">
+            <div class="hero-banner__image-mask">
+                <picture>
+                    <source srcset="images/hero-manufacturing.avif" type="image/avif">
+                    <img id="heroBannerImage" src="images/Industrial project1.jpg"
+                        alt="Industrial CNC and fabrication facility" loading="lazy">
+                </picture>
+            </div>
+        </div>
+
+        <!-- Arrows removed -->
+    </section>
+
+    <!-- INTRO – hexagon style section -->
+    <section class="section intro">
+        <div class="container intro__grid">
+            <div class="intro__image reveal">
+                <div class="intro__hex-wrapper">
+                    <div class="intro__hex">
+                        <picture>
+                            <source srcset="images/Industrial project2.jpg" type="image/jpeg">
+                            <img src="images/Industrial project2.jpg" alt="Engineers reviewing manufacturing drawings">
+                        </picture>
+                    </div>
+                    <div class="intro__shape intro__shape--one"></div>
+                    <div class="intro__shape intro__shape--two"></div>
+                </div>
+
+                <div class="intro__waves"></div>
+            </div>
+
+            <div class="intro__content reveal">
+                <p class="section-eyebrow">About Precision Manufacturing Co.</p>
+                <h2 class="intro__title">
+                    We Help OEMs Build<br />Machines That Last Longer
+                </h2>
+                <p class="intro__text">
+                    Precision Manufacturing Co. is a CNC and fabrication partner for industrial
+                    applications where failure is not an option. From one-off prototypes to high-volume
+                    production, our teams support you through design for manufacturability, tooling,
+                    and consistent batch quality.
+                </p>
+                <p class="intro__text">
+                    We work closely with sourcing, engineering, and plant teams to simplify
+                    assemblies, de-risk production, and improve field reliability.
+                </p>
+
+                <a href="about.html" class="btn btn--primary intro__button">
+                    Read More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLUE BAND – “Tap into…” style capability band -->
+    <section class="section section--primary band">
+        <div class="container band__grid">
+            <div class="band__content reveal">
+                <h2 class="band__title">Tap Into a Reliable Manufacturing Partner</h2>
+
+                <div class="band__items">
+                    <div class="band__item">
+                        <div class="band__icon">📐</div>
+                        <div>
+                            <h3>CNC Precision Parts</h3>
+                            <p>
+                                Shafts, flanges, housings, manifolds, and custom machined components
+                                produced to demanding tolerances.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="band__item">
+                        <div class="band__icon">🧱</div>
+                        <div>
+                            <h3>Fabrication &amp; Welding</h3>
+                            <p>
+                                Structural weldments, bases, brackets, and jigs built on robust
+                                welding procedures and qualified welders.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="band__item">
+                        <div class="band__icon">🧪</div>
+                        <div>
+                            <h3>Prototyping &amp; PPAP</h3>
+                            <p>
+                                Support for PPAP, trial batches, and design validation so you can
+                                launch new products with confidence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="band__item">
+                        <div class="band__icon">🤝</div>
+                        <div>
+                            <h3>Long-Term Support</h3>
+                            <p>
+                                Capacity ramp-up, buffer stocks, and transparent communication
+                                aligned with your production planning.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right image card with glow -->
+            <div class="band__visual reveal">
+                <div class="band__card">
+                    <picture>
+                        <source srcset="images/Industrial project3.jpg" type="image/jpeg">
+                        <img src="images/Industrial project3.jpg" alt="Operator monitoring CNC machines">
+                    </picture>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section class="section" id="about">
+    <!-- VALUE CARDS – like “Best Talent / Quality Work…” row -->
+    <section class="section section--light">
         <div class="container">
-            <div class="section__header">
-                <div>
-                    <div class="section__eyebrow">About Us</div>
-                    <h2 class="section__title">Engineering partners, not just vendors.</h2>
-                </div>
+            <div class="section-centered">
+                <h2 class="section-title section-title--center">
+                    Make It Real with Precision Manufacturing Co.<br />
+                    <span class="section-title__accent">Get Components You Can Trust in the Field</span>
+                </h2>
             </div>
 
-            <div class="card-grid reveal">
-                <article class="card">
-                    <div class="card__icon">🏭</div>
-                    <h3 class="card__title">End-to-end facility</h3>
-                    <p class="card__text">
-                        CNC machining, sheet-metal, welding, surface treatment, and assembly under
-                        one roof for tighter control and faster turnaround.
-                    </p>
+            <div class="value-cards reveal">
+                <article class="value-card">
+                    <div class="value-card__image-wrapper">
+                        <img src="images/Industrial project4.jpg" alt="Machining operator at work">
+                    </div>
+                    <div class="value-card__body">
+                        <h3>The Right Components</h3>
+                        <p>
+                            Work with a team that understands drawings, materials, and fits – not just
+                            how to “run a machine”.
+                        </p>
+                    </div>
                 </article>
 
-                <article class="card">
-                    <div class="card__icon">📏</div>
-                    <h3 class="card__title">Obsessed with tolerances</h3>
-                    <p class="card__text">
-                        Dedicated QA cell with CMM, gauges, and calibrated instruments ensures
-                        consistent quality for every batch.
-                    </p>
+                <article class="value-card">
+                    <div class="value-card__image-wrapper">
+                        <img src="images/Industrial project5.jpg" alt="Quality inspection of manufactured parts">
+                    </div>
+                    <div class="value-card__body">
+                        <h3>Repeatable Quality</h3>
+                        <p>
+                            Process sheets, in-process checks, and final inspection ensure
+                            every batch behaves like the previous one.
+                        </p>
+                    </div>
                 </article>
 
-                <article class="card">
-                    <div class="card__icon">🤝</div>
-                    <h3 class="card__title">Built on long-term relationships</h3>
-                    <p class="card__text">
-                        Many customers have worked with us for over a decade, scaling production
-                        with our capacity expansions.
-                    </p>
+                <article class="value-card">
+                    <div class="value-card__image-wrapper">
+                        <img src="images/Industrial project6.jpg" alt="Industrial assembly and installation">
+                    </div>
+                    <div class="value-card__body">
+                        <h3>On-Time Shipments</h3>
+                        <p>
+                            Commitments you can plan around, with proactive updates and a
+                            culture that respects your line stoppage risk.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="value-card">
+                    <div class="value-card__image-wrapper">
+                        <img src="images/Industrial project1.jpg" alt="Industrial shop floor view">
+                    </div>
+                    <div class="value-card__body">
+                        <h3>Ease of Working</h3>
+                        <p>
+                            A single point of contact, clear documentation, and teams that
+                            collaborate with your engineers.
+                        </p>
+                    </div>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Our Services Section (centered layout) -->
-    <section class="section section--alt" id="services">
-        <div class="section-centered">
-            <div class="section-header-centered">
-                <div class="section-eyebrow">Our Services</div>
-                <h2 class="section-title">From concept to production-ready components.</h2>
-            </div>
-
-            <div class="section-content">
-                <div class="card-grid reveal">
-                    <article class="card">
-                        <div class="card__icon">⚙️</div>
-                        <h3 class="card__title">CNC Machining</h3>
-                        <p class="card__text">
-                            High-precision turning and milling on modern CNC machines for shafts,
-                            flanges, housings, and more.
-                        </p>
-                        <span class="card__tag">±0.01 mm Tolerances</span>
-                    </article>
-
-                    <article class="card">
-                        <div class="card__icon">🧱</div>
-                        <h3 class="card__title">Fabrication & Welding</h3>
-                        <p class="card__text">
-                            MIG/TIG welding, structural fabrication, jigs, fixtures, frames, and
-                            machine bases built to spec.
-                        </p>
-                        <span class="card__tag">Robotic & Manual</span>
-                    </article>
-
-                    <article class="card">
-                        <div class="card__icon">📦</div>
-                        <h3 class="card__title">Assembly & Sub-assemblies</h3>
-                        <p class="card__text">
-                            Mechanical assemblies, leak-tested components, and plug-and-play modules
-                            for your production lines.
-                        </p>
-                        <span class="card__tag">Ready for Line Fitment</span>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section (centered layout) -->
-    <section class="section" id="why">
-        <div class="section-centered">
-            <div class="section-header-centered">
-                <div class="section-eyebrow">Why Choose Us</div>
-                <h2 class="section-title">Manufacturing that fits your reality.</h2>
-            </div>
-
-            <div class="section-content">
-                <div class="benefit-grid reveal">
-                    <div class="benefit">
-                        <strong>Process-driven</strong>
-                        <p>
-                            Documented SOPs, PPAP, and robust in-process checks integrated into every
-                            operation.
-                        </p>
-                    </div>
-                    <div class="benefit">
-                        <strong>Scalable capacity</strong>
-                        <p>
-                            From 10 pieces to 10,000 – easily ramp up with our flexible production
-                            planning.
-                        </p>
-                    </div>
-                    <div class="benefit">
-                        <strong>Application understanding</strong>
-                        <p>
-                            We study where your component will be used and suggest improvements
-                            proactively.
-                        </p>
-                    </div>
-                    <div class="benefit">
-                        <strong>On-time, every time</strong>
-                        <p>
-                            Realistic commitments, clear communication, and a culture of respecting
-                            customer timelines.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section (running left-to-right slider, no boxes) -->
+    <!-- Testimonials Section (running slider) -->
     <section class="section section--alt" id="testimonials">
         <div class="section-centered">
             <div class="section-header-centered">
@@ -206,7 +272,6 @@
             <div class="section-content">
                 <div class="testimonials-slider reveal">
                     <div class="testimonials-track">
-                        <!-- Original 3 testimonials -->
                         <article class="testimonial">
                             <p class="testimonial__quote">
                                 “Precision Manufacturing Co. has been our machining partner for over eight
@@ -282,9 +347,9 @@
                     <div class="footer__links-title">Quick Links</div>
                     <a href="about.html" class="footer__link">About Us</a>
                     <a href="services.html" class="footer__link">Our Services</a>
-                    <a href="products.html" class="footer__link">Products & Machines</a>
+                    <a href="products.html" class="footer__link">Products &amp; Machines</a>
                     <a href="gallery.html" class="footer__link">Facility Gallery</a>
-                    <a href="contact.html" class="footer__link">Contact & Location</a>
+                    <a href="contact.html" class="footer__link">Contact &amp; Location</a>
                 </div>
                 <div>
                     <div class="footer__links-title">Contact</div>
